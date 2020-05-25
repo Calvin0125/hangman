@@ -112,7 +112,6 @@ end
 game_name = gets.chomp.downcase
 if game_name == "new"
     new_game = Game.new
-    p new_game.word
     new_game.play_new_game
 else
     saved_game = load_game("saved_games/" + game_name + ".txt")
